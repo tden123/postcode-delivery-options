@@ -25,3 +25,4 @@ include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-settings-link.php' );
 include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-styles.php' );
 include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-scripts.php' );
 include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-options.php' );
+include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-menu.php' );
