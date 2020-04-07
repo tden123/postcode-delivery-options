@@ -12,20 +12,16 @@ Text Domain: wpplugin
 */
 
 // Do not allow file to be called directly
-if ( ! defined( 'WPINC' ) ) {
+if ( !defined( 'WPINC' ) ) {
     die;
 }
 
+defined( 'WPPLUGIN_DIR' ) or define( 'WPPLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+defined( 'WPPLUGIN_URL' ) or define( 'WPPLUGIN_URL', plugin_dir_url( __FILE__ ) );
+ 
 
 include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-settings-fields.php' );
-
-// Displays link next to activate that links to the
-function wpplugin_add_settings_link( $links )
-{
-    $settings_link = '<a href="admin.php?page=wpplugin">' . __( 'Settings', 'wpplugin' ) . '</a>';
-    array_push( $links, $settings_link );
-    return $links;
-}
-
-$filter_name = "plugin_action_links_" . plugin_basename( __FILE__ );
-add_filter( $filter_name, 'wpplugin_add_settings_link' );
+include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-settings-link.php' );
+include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-styles.php' );
+include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-scripts.php' );
+include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-options.php' );
