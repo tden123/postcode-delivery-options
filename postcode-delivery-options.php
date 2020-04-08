@@ -20,9 +20,8 @@ defined( 'WPPLUGIN_DIR' ) or define( 'WPPLUGIN_DIR', plugin_dir_path( __FILE__ )
 defined( 'WPPLUGIN_URL' ) or define( 'WPPLUGIN_URL', plugin_dir_url( __FILE__ ) );
  
 
-include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-settings-fields.php' );
-include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-settings-link.php' );
-include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-styles.php' );
-include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-scripts.php' );
-include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-options.php' );
-include( plugin_dir_path( __FILE__ ) . 'includes/wpplugin-menu.php' );
+include( plugin_dir_path( __FILE__ ) . 'includes/styles.php' );
+include( plugin_dir_path( __FILE__ ) . 'includes/scripts.php' );
+
+// setup postcodes custom fields
+include( plugin_dir_path( __FILE__ ) . 'cpt/postcodes/register.php' );

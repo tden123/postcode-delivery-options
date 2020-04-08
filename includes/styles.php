@@ -1,16 +1,5 @@
 <?php
 
-function wpplugin_admin_styles() {
-    wp_enqueue_style(
-        'wpplugin-admin',
-        WPPLUGIN_URL . 'admin/css/wpplugin-admin-style.css',
-        [],
-        time()
-    );
-};
-add_action( 'admin_enqueue_scripts', 'wpplugin_admin_styles' );
-
-
 function wpplugin_frontend_styles() {
     wp_enqueue_style(
         'wpplugin-frontend',
