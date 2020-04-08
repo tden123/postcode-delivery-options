@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+#postcode-data-header > th {
+  text-align: left;
+  color: #003a40;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 15px;
+  width: 100px;
+}
+
+#postcode-data > tbody > tr {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: #009a44;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 10px;
+}
+
+#postcode-input {
+  box-sizing: border-box;
+  padding: 5px;
+}

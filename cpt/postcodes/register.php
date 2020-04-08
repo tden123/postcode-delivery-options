@@ -2,14 +2,11 @@
 
 function register_postcodes_cpt(){
     register_post_type('postcodes', [
-        'label' => 'Postcodes',
+        'label' => 'Delivery Locations',
         'public' => true,
-        'capability_type' => 'post'
+        'capability_type' => 'post',
+        'supports' => ['title'],
+        'menu_icon' => "dashicons-location-alt"
     ]);
 }
 add_action( 'init', 'register_postcodes_cpt' );
-
-
-function get_postcodes() {
-
-}

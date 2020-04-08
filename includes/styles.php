@@ -1,11 +1,11 @@
 <?php
 
-function wpplugin_frontend_styles() {
+function postcode_styles() {
     wp_enqueue_style(
-        'wpplugin-frontend',
-        WPPLUGIN_URL . 'frontend/css/wpplugin-frontend-style.css',
+        'postcode',
+        WPPLUGIN_URL . 'frontend/css/postcode-style.css',
         [],
         time()
     );
 };
-add_action( 'wp_enqueue_scripts', 'wpplugin_frontend_styles', 100 );
+add_action( 'wp_enqueue_scripts', 'postcode_styles', 100 );

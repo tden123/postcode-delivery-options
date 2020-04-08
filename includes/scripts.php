@@ -23,7 +23,7 @@ foreach( $postcode_ids as $id ) {
     array_push($postcode_data, $data);
 }
 
-wp_register_script( 'postcodes', WPPLUGIN_URL . 'frontend/js/displayPostcode.js', [], time(), true );
+wp_register_script( 'postcodes', WPPLUGIN_URL . 'frontend/js/displayLocations.js', [], time(), true );
 
 wp_localize_script('postcodes', 'postcode_data', $postcode_data);
 
