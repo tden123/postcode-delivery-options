@@ -1,6 +1,13 @@
 (function () {
-  // postcodes returns a 2D array
-  // array format: [town, postcode, run, area, days_available]
+  /* 
+    postcode_data format: [
+      town: String, 
+      postcode: String, 
+      run: String, area: 
+      String, 
+      days_available: Array
+    ] 
+  */
 
   if (!postcode_data) return;
 
