@@ -1,13 +1,12 @@
 (function () {
   // postcodes returns a 2D array
   // array format: [town, postcode, run, area, days_available]
-  console.log(postcode_data);
 
   if (!postcode_data) return;
 
-  let inputField = document.getElementById('postcode-input');
+  let inputField = document.getElementById('postcodes__input');
 
-  let displayData = document.getElementById('postcode-data');
+  let displayData = document.getElementById('postcodes__data');
 
   inputField.oninput = handleInput;
 
@@ -15,10 +14,11 @@
     displayData.innerHTML = '';
 
     // add table header
-    if (postcode_data.length > 0 && e.target.value.length > 0) {
+    if (postcode_data.length > 0 && e.target.value.length > 1) {
       displayData.innerHTML += `
-      <tr id='postcode-data-header'>
+      <tr id='postcodes__data-header'>
         <th>Town</th>
+        <th>Postcode</th>
         <th>Run</th>
         <th>Area</th>
         <th>Delivery day/s</th>
@@ -36,6 +36,7 @@
           displayData.innerHTML += `
       <tr>
         <td>${item[0]}</td>
+        <td>${item[1]}</td>
         <td>${item[2]}</td>
         <td>${item[3]}</td>
         <td>${item[4].join(', ')}</td>
@@ -43,7 +44,5 @@
         }
       });
     }
-
-    console.log(e.target.value);
   }
 })(document);

@@ -19,7 +19,7 @@ if ( !defined( 'WPINC' ) ) {
 defined( 'WPPLUGIN_DIR' ) or define( 'WPPLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 defined( 'WPPLUGIN_URL' ) or define( 'WPPLUGIN_URL', plugin_dir_url( __FILE__ ) );
  
-
+// Load JS and CSS
 include( plugin_dir_path( __FILE__ ) . 'includes/styles.php' );
 include( plugin_dir_path( __FILE__ ) . 'includes/scripts.php' );
 

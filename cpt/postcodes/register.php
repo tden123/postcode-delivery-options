@@ -1,5 +1,5 @@
 <?php
-
+// Register custom post type
 function register_postcodes_cpt(){
     register_post_type('postcodes', [
         'label' => 'Delivery Locations',

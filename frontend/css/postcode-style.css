@@ -1,6 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
-#postcode-data-header > th {
+#postcodes__input {
+  /* Input icon styling */
+  background-image: url('../../assets/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  background-size: 20px 20px;
+
+  padding: 15px 0;
+  padding-right: 45px;
+  padding-left: 20px;
+
+  border: 0.5px solid #003a40;
+
+  font-size: 12px;
+
+  margin-bottom: 20px;
+}
+
+#postcodes__input::placeholder {
+  color: lightgray;
+}
+
+#postcodes__data {
+  width: 700px;
+}
+
+/* Everything below is defined in displayLocations.js script */
+
+#postcodes__data-header > th {
   text-align: left;
   color: #003a40;
   font-family: 'Work Sans', sans-serif;
@@ -8,15 +36,10 @@
   width: 100px;
 }
 
-#postcode-data > tbody > tr {
+#postcodes__data > tbody > tr {
   padding-top: 5px;
   padding-bottom: 5px;
   color: #009a44;
   font-family: 'Work Sans', sans-serif;
   font-size: 10px;
-}
-
-#postcode-input {
-  box-sizing: border-box;
-  padding: 5px;
 }
