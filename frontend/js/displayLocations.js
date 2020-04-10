@@ -18,6 +18,7 @@
   inputField.oninput = handleInput;
 
   function handleInput(e) {
+    console.log(e.target.value);
     displayData.innerHTML = '';
 
     // add table header

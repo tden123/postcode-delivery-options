@@ -9,3 +9,7 @@
 - postcode
 - area
 - delivery days
+
+## Setup
+
+![](postcode-setup.gif)

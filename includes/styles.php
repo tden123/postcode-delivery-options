@@ -5,7 +5,7 @@ function postcode_styles() {
         'postcode',
         WPPLUGIN_URL . 'frontend/css/postcode-style.css',
         [],
-        'v1'
+        false
     );
 };
 add_action( 'wp_enqueue_scripts', 'postcode_styles', 100 );
